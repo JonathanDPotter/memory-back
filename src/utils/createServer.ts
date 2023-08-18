@@ -11,7 +11,7 @@ const createServer = () => {
   server.use(express.static(path.join(__dirname, "../static")));
   // logging with morgan
   server.use(morgan("dev"));
-  server.use(cors({ origin: "https://memory-theta-red.vercel.app/" }));
+  server.use(cors({ origin: "https://memory-theta-red.vercel.app" }));
   server.use(helmet());
   server.use(indexRoutes);
 
