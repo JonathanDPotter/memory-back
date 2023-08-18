@@ -5,6 +5,9 @@
   "author": "Jonathan <jonathan.d.potter@outlook.com>",
   "license": "MIT",
   "private": false,
+  "engines": {
+    "node": "20.5.0"
+  },
   "scripts": {
     "start": "node dist/src/server.js",
     "build": "yarn clean && tsc && yarn copy-files",
